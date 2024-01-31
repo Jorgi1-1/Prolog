@@ -1,5 +1,3 @@
-
-
 check(LEFTCAN,LEFTMIS,RIGHTCAN,RIGHTMIS) :- %checks if the move is correct according to the game's rules
 	LEFTMIS >= 0, LEFTCAN >= 0, RIGHTMIS >= 0, RIGHTCAN >= 0, %ensures that the number of missionaries and cannibals on both banks is non-negative.
 	(LEFTMIS >= LEFTCAN ; LEFTMIS = 0), %checks that cannibals don't outnumber missionaries in left 
